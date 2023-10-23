@@ -5,6 +5,7 @@
     <string name="olvido">Olvidé mi contraseña</string>
     <string name="registrarse">Registrarse</string>
     <string name="password">Contraseña:</string>
+    <string name="email">Correo electrónico</string>
 
 
 </resources>

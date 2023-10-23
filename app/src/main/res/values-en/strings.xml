@@ -5,4 +5,6 @@
     <string name="olvido">I forgot my password</string>
     <string name="registrarse">Register</string>
     <string name="password">Password:</string>
+    <string name="email">Email</string>
+
 </resources>
