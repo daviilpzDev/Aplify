@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void initSecAct(View view){
 
-        //Intent intentSecondary = new Intent(this, Secondary_activity.class);
-        //startActivity( intentSecondary);
+        Intent intentSecondary = new Intent(this, register_activity.class);
+        startActivity( intentSecondary);
     }
 
 
