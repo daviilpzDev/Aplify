@@ -6,4 +6,8 @@
     <string name="registrarse">Register</string>
     <string name="password">Password:</string>
     <string name="agree_text">I agree</string>
+    <string name="Continuar">Continuar</string>
+    <string name="email">Email</string>
+
+
 </resources>
