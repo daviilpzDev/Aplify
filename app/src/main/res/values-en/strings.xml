@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="correo_log">Mail/User:</string>
+    <string name="iniciar_sesion">Log in</string>
+    <string name="olvido">I forgot my password</string>
+    <string name="registrarse">Register</string>
+    <string name="password">Password:</string>
+</resources>

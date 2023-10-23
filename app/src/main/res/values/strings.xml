@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Aplify</string>
+    <string name="app_name" translatable="false">Aplify</string>
+    <string name="correo_log">Correo/Usuario:</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="olvido">Olvidé mi contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="password">Contraseña:</string>
+
+
 </resources>
