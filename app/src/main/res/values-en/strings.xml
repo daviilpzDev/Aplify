@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="nombreApellido">Name &amp; Surname</string>
+    <string name="nombre">Name</string>
+    <string name="apellido">Surname</string>
     <string name="iniciar_sesion">Log in</string>
     <string name="olvido">I forgot my password</string>
     <string name="registrarse">Register</string>

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Aplify</string>
-    <string name="nombreApellido">Nombre y apellido</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
     <string name="iniciar_sesion">Iniciar sesión</string>
     <string name="olvido">Olvidé mi contraseña</string>
     <string name="registrarse">Registrarse</string>
