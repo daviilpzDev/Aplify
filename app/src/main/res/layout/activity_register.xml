@@ -9,33 +9,16 @@
     tools:ignore="ExtraText">
 
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="267dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/secundary"
-        android:onClick="initSecAct"
-        android:text="@string/Continuar"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.862"
-        tools:ignore="TouchTargetSizeCheck" />
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="142dp"
         android:layout_height="131dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013"
+        app:layout_constraintVertical_bias="0.038"
         app:srcCompat="@drawable/aplify"
         tools:ignore="ContentDescription" />
 
@@ -50,7 +33,34 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0" >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="237dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/secundary"
+            android:onClick="initSecAct"
+            android:text="@string/Continuar"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="goToMainActivity"
+            android:text="@string/yaRegistrado"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
+    </LinearLayout>
 
 
     <TextView
@@ -67,7 +77,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294"
+        app:layout_constraintVertical_bias="0.307"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <TextView
@@ -83,7 +93,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423"
+        app:layout_constraintVertical_bias="0.425"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <EditText
@@ -123,31 +133,36 @@
 
     <CheckBox
         android:id="@+id/checkBox2"
-        android:layout_width="207dp"
-        android:layout_height="100dp"
+        android:layout_width="268dp"
+        android:layout_height="82dp"
         android:buttonTint="#101010"
-        android:text="I agree to the Terms of Services and Privacy Policy"
+        android:text="@string/terminos"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.054"></CheckBox>
+        app:layout_constraintVertical_bias="0.054"
+        tools:ignore="TextSizeCheck"></CheckBox>
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="100dp"
-        android:layout_height="48dp"
+        android:layout_width="124dp"
+        android:layout_height="54dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Sign Up"
+        android:text="@string/registro"
         android:textColor="#090909"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintHorizontal_bias="0.254"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="Autofill,LabelFor,TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,9 +8,7 @@
     <string name="agree_text">I agree to the Terms of Services and Privacy Policy</string>
     <string name="Continuar">Continuar</string>
     <string name="email">Correo electrónico</string>
-    <string name="direccion">Email</string>
-    <string name="porfavor">Please, insert the direction of the email that you want to recover </string>
-    <string name="enviar">Submit</string>
+
 
 
 </resources>
