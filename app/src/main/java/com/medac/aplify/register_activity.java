@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.CheckBox;
 import android.view.View;
+import android.widget.Toast;
 
 public class register_activity extends AppCompatActivity {
 
@@ -19,7 +20,6 @@ public class register_activity extends AppCompatActivity {
             checkBox.setChecked(false);
         }
     }
-
     public void goToMainActivity(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
