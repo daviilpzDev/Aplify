@@ -132,7 +132,7 @@
         android:textColor="@color/white"
         android:textColorLink="@color/black"
         android:textStyle="bold"
-        android:onClick="initolvido"
+        android:onClick="initOlvido"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

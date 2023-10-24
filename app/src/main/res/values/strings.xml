@@ -11,5 +11,11 @@
     <string name="terminos">Estoy de acuerdo con el acuerdo de terminos y servicios y la politica de privacidad</string>
     <string name="registro">Registro</string>
     <string name="yaRegistrado">¿Ya esta registrado? pulse aqui</string>
+    <string name="porFavor">Por favor, ingresa la dirección de correo electrónico de la cuenta que deseas recperar.</string>
+    <string name="direccionEmail">Dirección de correo electrónico de la cuenta de Aplify</string>
+    <string name="enviar">Enviar</string>
+    <string name="recuperarCuenta">Recuperación de cuenta</string>
+    <string name="volver">Volver a Inicio de sesión</string>
+
 
 </resources>

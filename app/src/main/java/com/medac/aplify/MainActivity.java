@@ -21,5 +21,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity( intentSecondary);
     }
 
+    public void initOlvido(View view){
+
+        Intent intentSecondary = new Intent(this, forgetPasword_activity.class);
+        startActivity( intentSecondary);
+    }
+
+
+
 
 }
