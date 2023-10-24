@@ -14,7 +14,7 @@ public class register_activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Metodo para bloquear pantalla en vertical
         setContentView(R.layout.activity_register);
 
         final CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox2);
@@ -22,6 +22,9 @@ public class register_activity extends AppCompatActivity {
             checkBox.setChecked(false);
         }
     }
+
+
+    // Llamada de vuelta al main
     public void goToMainActivity(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
