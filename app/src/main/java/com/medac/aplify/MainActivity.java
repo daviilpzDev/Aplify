@@ -21,5 +21,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity( intentSecondary);
     }
 
+    public void initUsuarioCreado(View view){
+
+        Intent intentSecondary = new Intent(this, register_activity.class);
+        startActivity( intentSecondary);
+    }
+
 
 }

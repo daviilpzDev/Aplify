@@ -52,11 +52,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:clickable="true"
             android:gravity="center"
+            android:onClick="goToMainActivity"
             android:text="@string/yaRegistrado"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
     </LinearLayout>
 
 
@@ -141,7 +144,8 @@
         app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.054"></CheckBox>
+        app:layout_constraintVertical_bias="0.054"
+        tools:ignore="TextSizeCheck"></CheckBox>
 
     <EditText
         android:id="@+id/editTextText"
@@ -158,6 +162,7 @@
         app:layout_constraintHorizontal_bias="0.254"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="Autofill,LabelFor,TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

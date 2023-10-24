@@ -2,6 +2,7 @@ package com.medac.aplify;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.CheckBox;
 
@@ -16,5 +17,6 @@ public class register_activity extends AppCompatActivity {
         if (checkBox.isChecked()) {
             checkBox.setChecked(false);
         }
+
     }
 }
