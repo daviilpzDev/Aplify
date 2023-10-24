@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:screenOrientation="portrait">
 
 
     <LinearLayout
@@ -25,8 +26,8 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="233dp"
+        android:layout_height="28dp"
         android:background="@color/transparency"
         android:ems="10"
         android:fontFamily="serif"
@@ -40,13 +41,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336"
+        app:layout_constraintVertical_bias="0.338"
         tools:ignore="Autofill,LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="233dp"
+        android:layout_height="28dp"
         android:background="@color/transparency"
         android:ems="10"
         android:inputType="textPassword"
@@ -63,16 +64,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
-        android:text="@string/correo_log"
+        android:text="@string/email"
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="16sp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.296"
+        app:layout_constraintVertical_bias="0.307"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <TextView
@@ -83,19 +85,20 @@
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="16sp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452"
+        app:layout_constraintVertical_bias="0.468"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/primary"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:background="@drawable/rounded_button1"
         android:text="@string/iniciar_sesion"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -103,14 +106,15 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintVertical_bias="0.402"
+        tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="251dp"
         android:layout_height="41dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/secundary"
+        android:background="@drawable/rounded_button2"
         android:text="@string/registrarse"
         android:textColor="@color/white"
         android:onClick="initSecAct"
@@ -182,12 +186,13 @@
         android:id="@+id/imageView2"
         android:layout_width="142dp"
         android:layout_height="131dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/aplify"
         tools:ignore="ContentDescription" />
 

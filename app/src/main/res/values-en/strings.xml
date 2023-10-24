@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="correo_log">Mail/User:</string>
+    <string name="nombreApellido">Name &amp; Surname</string>
     <string name="iniciar_sesion">Log in</string>
     <string name="olvido">I forgot my password</string>
     <string name="registrarse">Register</string>
-    <string name="password">Password:</string>
-    <string name="agree_text">I agree</string>
+    <string name="password">Password</string>
+    <string name="agree_text">I agree to the Terms of Services and Privacy Policy</string>
     <string name="Continuar">Continue</string>
     <string name="email">Email</string>
-    <string name="terminos">I agree to the Terms of Services and Privacy Policy</string>
     <string name="registro">Sign up</string>
     <string name="yaRegistrado">Are you already registered? Click here</string>
     <string name="porFavor">Please enter the email address of the account you wish to recover.</string>
