@@ -8,7 +8,8 @@
     <string name="agree_text">I agree to the Terms of Services and Privacy Policy</string>
     <string name="Continuar">Continuar</string>
     <string name="email">Correo electrónico</string>
-
-
+    <string name="terminos">Estoy de acuerdo con el acuerdo de terminos y servicios y la politica de privacidad</string>
+    <string name="registro">Registro</string>
+    <string name="yaRegistrado">¿Ya esta registrado? pulse aqui</string>
 
 </resources>
