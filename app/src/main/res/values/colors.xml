@@ -6,4 +6,5 @@
     <color name="secundary">#A32B2B</color>
     <color name="transparency">#0A000000</color>
     <color name="lowColorText">#615C5C</color>
+    <color name="grey_transparent">#85918E8E</color>
 </resources>

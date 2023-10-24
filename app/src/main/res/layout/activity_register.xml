@@ -78,7 +78,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413"
+        app:layout_constraintVertical_bias="0.423"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <TextView
@@ -95,7 +95,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.014"
+        app:layout_constraintVertical_bias="0.04"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <TextView
@@ -121,72 +121,83 @@
         android:background="@color/transparency"
         android:ems="10"
         android:fontFamily="serif"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textAlignment="viewStart"
         android:textColor="@color/black"
+        android:textColorHint="@color/grey_transparent"
         android:typeface="normal"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.028"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="Autofill,LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="233dp"
         android:layout_height="28dp"
+        android:layout_marginTop="5dp"
         android:background="@color/transparency"
         android:ems="10"
         android:fontFamily="serif"
+        android:hint="@string/nombreApellido"
         android:inputType="textEmailAddress"
         android:textAlignment="viewStart"
         android:textColor="@color/black"
+        android:textColorHint="@color/grey_transparent"
+        android:textSize="14sp"
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.365"
+        app:layout_constraintVertical_bias="0.359"
         tools:ignore="Autofill,LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="233dp"
         android:layout_height="28dp"
+        android:layout_marginTop="5dp"
         android:background="@color/transparency"
         android:ems="10"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:textColor="@color/black"
+        android:textColorHint="@color/grey_transparent"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.026"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <CheckBox
         android:id="@+id/checkBox2"
-        android:layout_width="345dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="30dp"
-        android:buttonTint="#101010"
+        android:layout_width="356dp"
+        android:layout_height="54dp"
+        android:buttonTint="@color/black"
         android:text="@string/agree_text"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.437"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="TextSizeCheck,VisualLintButtonSize"></CheckBox>
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="114dp"
-        android:layout_height="44dp"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
         android:ems="10"
         android:text="@string/registro"
         android:textColor="#090909"
@@ -195,10 +206,11 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259"
+        app:layout_constraintVertical_bias="0.258"
         tools:ignore="Autofill,LabelFor,TextSizeCheck,TouchTargetSizeCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
