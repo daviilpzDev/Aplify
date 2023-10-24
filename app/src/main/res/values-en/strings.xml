@@ -8,6 +8,7 @@
     <string name="agree_text">I agree</string>
     <string name="Continuar">Continuar</string>
     <string name="email">Email</string>
-
-
+    <string name="direccion">Email</string>
+    <string name="porfavor">Por favor, ingrese la direccion de correo electronico que deseas recuperar</string>
+    <string name="enviar">Submit</string>
 </resources>
