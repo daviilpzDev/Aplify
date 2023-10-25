@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Aplify"
         tools:targetApi="31">
         <activity
+            android:name=".privacity"
+            android:exported="false" />
+        <activity
             android:name=".forgetPasword_activity"
             android:exported="false"
             android:theme="@style/AppTheme" />
@@ -31,4 +34,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
