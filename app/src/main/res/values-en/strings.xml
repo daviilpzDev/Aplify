@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="nombre">Name</string>
     <string name="apellido">Surname</string>
     <string name="iniciar_sesion">Log in</string>
@@ -16,76 +16,62 @@
     <string name="enviar">Submit</string>
     <string name="recuperarCuenta">Account recovery</string>
     <string name="volver">Return to Log in</string>
-    <string name="privacidad">Privacity Terms</string>
+    <string name="terminos">Privacity Terms and conditions</string>
     <string name="terms_and_conditions">
-    Terms and Conditions Agreement\n
-    \n
-    This Terms and Conditions Agreement sets the terms and conditions under which you can use our mobile application, hereinafter referred to as "Aplify." By accessing and using the Application, you agree to comply with the terms and conditions set forth in this Agreement. If you do not agree with these terms, please do not use the Application.\n
-    \n
-    1. Use of the Application\n
-    \n
-    1.1. You must be at least 18 years old to use the Application.\n
-    1.2. You commit to providing accurate and up-to-date information when registering with the Application.\n
-    1.3. You must not use the Application for illegal or inappropriate purposes.\n
-    \n
-    2. Privacy and Personal Data\n
-    \n
-    2.1. Our Privacy Policy describes how we collect, use, and protect your personal data. By using the Application, you agree to our privacy terms.\n
-    \n
-    3. User Content\n
-    \n
-    3.1. You are solely responsible for the content you share on the Application, including photos and descriptions. You must not share offensive, defamatory, or rights-violating content.\n
-    \n
-    4. Security\n
-    \n
-    4.1. You must take measures to keep your login information safe and not share it with third parties.\n
-    4.2. You must not attempt to access other users' accounts without authorization.\n
-    \n
-    5. Changes in the Agreement\n
-    \n
-    5.1. We reserve the right to modify this Agreement at any time. We will notify you of such changes, and you can review the updated version in the Application.\n
-    \n
-    6. Termination\n
-    \n
-    6.1. We can terminate your access to the Application in case of a breach of this Agreement or if we deem your behavior inappropriate.\n
-    \n
-    7. Disclaimer\n
-    \n
-    7.1. We are not responsible for users' actions or the accuracy of the information provided in the Application.\n
-    \n
-    8. Applicable Law\n
-    \n
-    8.1. This Agreement is governed by the laws of the State [Spain], and any dispute will be resolved in the courts of [Seville].\n
-    \n
-    Privacy Policy\n
-    \n
-    1. Collection of Personal Data\n
-    \n
-    1.1. When you register with the Application, we collect personal data such as your name, email address, date of birth, and appointments.\n
-    1.2. We may collect additional information, such as profile photos and search preferences.\n
-    \n
-    2. Use of Personal Data\n
-    \n
-    2.1. We use your personal data to provide the services of the Application, such as displaying other users' profiles and facilitating communication.\n
-    2.2. We may use your information to improve our services and conduct statistical analysis.\n
-    \n
-    3. Sharing Personal Data\n
-    \n
-    3.1. We will share your information with other users of the Application, such as your name and profile photo.\n
-    3.2. We will not sell or share your information with third parties without your consent, except as required by law.\n
-    \n
-    4. Data Security\n
-    \n
-    4.1. We take reasonable measures to protect your personal data, but we cannot guarantee absolute security.\n
-    \n
-    5. Changes in the Privacy Policy\n
-    \n
-    5.1. We reserve the right to modify our Privacy Policy at any time. We will notify you of such changes.\n
-    \n
-    6. Contact\n
-    \n
-    6.1. If you have any questions about this Privacy Policy or our terms, please contact us at [aplifyservice@gmail.com].\n
-</string>
+        Terms and Conditions Agreement
+
+        This Terms and Conditions Agreement sets forth the terms and conditions under which you may use our mobile application, hereinafter referred to as "Aplify." By accessing and using the Application, you agree to comply with the terms and conditions set forth in this Agreement. If you do not agree with these terms, please do not use the Application.
+
+        Use of the Application
+        1.1. You must be at least 18 years old to use the Application.
+        1.2. You commit to providing accurate and up-to-date information when registering on the Application.
+        1.3. You must not use the Application for illegal or inappropriate purposes.
+
+        Privacy and Personal Data
+        2.1. Our Privacy Policy describes how we collect, use, and protect your personal data. By using the Application, you agree to our privacy terms.
+
+        User Content
+        3.1. You are solely responsible for the content you share on the Application, including photos and descriptions. You must not share offensive, defamatory, or rights-violating content.
+
+        Security
+        4.1. You should take measures to keep your login information secure and not share it with third parties.
+        4.2. You must not attempt to access other users accounts without authorization.
+
+        Changes to the Agreement
+        5.1. We reserve the right to modify this Agreement at any time. We will notify you of such changes, and you will be able to review the updated version on the Application.
+
+        Termination
+        6.1. We may terminate your access to the Application in the event of a breach of this Agreement or if we deem your behavior inappropriate.
+
+        Disclaimer of Liability
+        7.1. We are not responsible for the actions of users or the accuracy of the information provided in the Application.
+
+        Applicable Law
+        8.1. This Agreement is governed by the laws of the State of [Spain], and any disputes will be resolved in the courts of [Seville].
+
+        Privacy Policy
+
+        Collection of Personal Data
+        1.1. When you register on the Application, we collect personal data such as your name, email address, date of birth, and appointments.
+        1.2. We may collect additional information, such as profile photos and search preferences.
+
+        Use of Personal Data
+        2.1. We use your personal data to provide the services of the Application, such as displaying profiles of other users and facilitating communication.
+        2.2. We may use your information to improve our services and conduct statistical analysis.
+
+        Sharing Personal Data
+        3.1. We will share your information with other users of the Application, such as your name and profile photo.
+        3.2. We will not sell or share your information with third parties without your consent, except as required by law.
+
+        Data Security
+        4.1. We take reasonable measures to protect your personal data, but we cannot guarantee absolute security.
+
+        Changes to the Privacy Policy
+        5.1. We reserve the right to modify our Privacy Policy at any time. We will notify you of such changes.
+
+        Contact
+        6.1. If you have any questions about this Privacy Policy or our terms, please contact us at [aplifyservicioalcliente@gmail.com].
+    </string>
 
 
 

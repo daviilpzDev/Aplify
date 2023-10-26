@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">Aplify</string>
     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
@@ -16,9 +16,8 @@
     <string name="enviar">Enviar</string>
     <string name="recuperarCuenta">Recuperación de cuenta</string>
     <string name="volver">Volver a Inicio de sesión</string>
-    <string name="privacidad">Términos de Privacidad</string>
-    <string name="terminos">Acuerdo de Términos y Condiciones
-    <string name="terminos">
+    <string name="terminos">Acuerdo de Términos y Condiciones</string>
+    <string name="terms_and_conditions">
     Acuerdo de Términos y Condiciones\n
     \n
     Este Acuerdo de Términos y Condiciones establece los términos y condiciones bajo los cuales puedes utilizar nuestra aplicación móvil, en adelante referida como "Aplify". Al acceder y utilizar la Aplicación, aceptas cumplir con los términos y condiciones establecidos en este Acuerdo. Si no estás de acuerdo con estos términos, por favor, no uses la Aplicación.\n
@@ -85,8 +84,7 @@
     \n
     6. Contacto\n
     \n
-    6.1. Si tienes alguna pregunta sobre esta Política de Privacidad o nuestros términos, contáctanos en [aplifyservicioalcliente@gmail.com].
-</string>
+    6.1. Si tienes alguna pregunta sobre esta Política de Privacidad o nuestros términos, contáctanos en [aplifyservicioalcliente@gmail.com].</string>
 
 
 
