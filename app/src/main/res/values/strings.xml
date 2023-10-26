@@ -18,73 +18,73 @@
     <string name="volver">Volver a Inicio de sesión</string>
     <string name="terminos">Acuerdo de Términos y Condiciones</string>
     <string name="terms_and_conditions">
-    Acuerdo de Términos y Condiciones\n
-    \n
-    Este Acuerdo de Términos y Condiciones establece los términos y condiciones bajo los cuales puedes utilizar nuestra aplicación móvil, en adelante referida como "Aplify". Al acceder y utilizar la Aplicación, aceptas cumplir con los términos y condiciones establecidos en este Acuerdo. Si no estás de acuerdo con estos términos, por favor, no uses la Aplicación.\n
-    \n
-    1. Uso de la Aplicación\n
-    \n
-    1.1. Debes tener al menos 18 años para utilizar la Aplicación.\n
-    1.2. Te comprometes a proporcionar información precisa y actualizada al registrarte en la Aplicación.\n
-    1.3. No debes utilizar la Aplicación con fines ilegales o inapropiados.\n
-    \n
-    2. Privacidad y Datos Personales\n
-    \n
-    2.1. Nuestra Política de Privacidad describe cómo recopilamos, usamos y protegemos tus datos personales. Al utilizar la Aplicación, aceptas nuestros términos de privacidad.\n
-    \n
-    3. Contenido de Usuario\n
-    \n
-    3.1. Eres el único responsable del contenido que compartes en la Aplicación, incluyendo fotos y descripciones. No debes compartir contenido ofensivo, difamatorio o que viole los derechos de otros.\n
-    \n
-    4. Seguridad\n
-    \n
-    4.1. Debes tomar medidas para mantener segura tu información de inicio de sesión y no compartirla con terceros.\n
-    4.2. No debes intentar acceder a cuentas de otros usuarios sin autorización.\n
-    \n
-    5. Cambios en el Acuerdo\n
-    \n
-    5.1. Nos reservamos el derecho de modificar este Acuerdo en cualquier momento. Te notificaremos de tales cambios y podrás revisar la versión actualizada en la Aplicación.\n
-    \n
-    6. Terminación\n
-    \n
-    6.1. Podemos terminar tu acceso a la Aplicación en caso de incumplimiento de este Acuerdo o si consideramos que tu conducta es inapropiada.\n
-    \n
-    7. Renuncia de Responsabilidad\n
-    \n
-    7.1. No somos responsables de las acciones de los usuarios ni de la precisión de la información proporcionada en la Aplicación.\n
-    \n
-    8. Ley Aplicable\n
-    \n
-    8.1. Este Acuerdo se rige por las leyes del Estado [España] y cualquier disputa se resolverá en los tribunales de [Sevilla].\n
-    \n
-    Política de Privacidad\n
-    \n
-    1. Recopilación de Datos Personales\n
-    \n
-    1.1. Al registrarte en la Aplicación, recopilamos datos personales como tu nombre, dirección de correo electrónico, fecha de nacimiento y citas.\n
-    1.2. Podemos recopilar información adicional, como fotos de perfil y preferencias de búsqueda.\n
-    \n
-    2. Uso de Datos Personales\n
-    \n
-    2.1. Utilizamos tus datos personales para proporcionar los servicios de la Aplicación, como mostrar perfiles de otros usuarios y facilitar la comunicación.\n
-    2.2. Podemos utilizar tu información para mejorar nuestros servicios y realizar análisis estadísticos.\n
-    \n
-    3. Compartir Datos Personales\n
-    \n
-    3.1. Compartiremos tu información con otros usuarios de la Aplicación, como tu nombre y foto de perfil.\n
-    3.2. No venderemos ni compartiremos tu información con terceros sin tu consentimiento, excepto cuando lo exija la ley.\n
-    \n
-    4. Seguridad de Datos\n
-    \n
-    4.1. Tomamos medidas razonables para proteger tus datos personales, pero no podemos garantizar la seguridad absoluta.\n
-    \n
-    5. Cambios en la Política de Privacidad\n
-    \n
-    5.1. Nos reservamos el derecho de modificar nuestra Política de Privacidad en cualquier momento. Te notificaremos de tales cambios.\n
-    \n
-    6. Contacto\n
-    \n
-    6.1. Si tienes alguna pregunta sobre esta Política de Privacidad o nuestros términos, contáctanos en [aplifyservicioalcliente@gmail.com].</string>
+        <b><u>Acuerdo de Términos y Condiciones\n</u></b>
+        \n
+        Este Acuerdo de Términos y Condiciones establece los términos y condiciones bajo los cuales puedes utilizar nuestra aplicación móvil, en adelante referida como "Aplify". Al acceder y utilizar la Aplicación, aceptas cumplir con los términos y condiciones establecidos en este Acuerdo. Si no estás de acuerdo con estos términos, por favor, no uses la Aplicación.\n
+        \n
+        1. Uso de la Aplicación\n
+        \n
+        1.1. Debes tener al menos 18 años para utilizar la Aplicación.\n
+        1.2. Te comprometes a proporcionar información precisa y actualizada al registrarte en la Aplicación.\n
+        1.3. No debes utilizar la Aplicación con fines ilegales o inapropiados.\n
+        \n
+        2. Privacidad y Datos Personales\n
+        \n
+        2.1. Nuestra Política de Privacidad describe cómo recopilamos, usamos y protegemos tus datos personales. Al utilizar la Aplicación, aceptas nuestros términos de privacidad.\n
+        \n
+        3. Contenido de Usuario\n
+        \n
+        3.1. Eres el único responsable del contenido que compartes en la Aplicación, incluyendo fotos y descripciones. No debes compartir contenido ofensivo, difamatorio o que viole los derechos de otros.\n
+        \n
+        4. Seguridad\n
+        \n
+        4.1. Debes tomar medidas para mantener segura tu información de inicio de sesión y no compartirla con terceros.\n
+        4.2. No debes intentar acceder a cuentas de otros usuarios sin autorización.\n
+        \n
+        5. Cambios en el Acuerdo\n
+        \n
+        5.1. Nos reservamos el derecho de modificar este Acuerdo en cualquier momento. Te notificaremos de tales cambios y podrás revisar la versión actualizada en la Aplicación.\n
+        \n
+        6. Terminación\n
+        \n
+        6.1. Podemos terminar tu acceso a la Aplicación en caso de incumplimiento de este Acuerdo o si consideramos que tu conducta es inapropiada.\n
+        \n
+        7. Renuncia de Responsabilidad\n
+        \n
+        7.1. No somos responsables de las acciones de los usuarios ni de la precisión de la información proporcionada en la Aplicación.\n
+        \n
+        8. Ley Aplicable\n
+        \n
+        8.1. Este Acuerdo se rige por las leyes del Estado [España] y cualquier disputa se resolverá en los tribunales de [Sevilla].\n
+        \n
+        Política de Privacidad\n
+        \n
+        1. Recopilación de Datos Personales\n
+        \n
+        1.1. Al registrarte en la Aplicación, recopilamos datos personales como tu nombre, dirección de correo electrónico, fecha de nacimiento y citas.\n
+        1.2. Podemos recopilar información adicional, como fotos de perfil y preferencias de búsqueda.\n
+        \n
+        2. Uso de Datos Personales\n
+        \n
+        2.1. Utilizamos tus datos personales para proporcionar los servicios de la Aplicación, como mostrar perfiles de otros usuarios y facilitar la comunicación.\n
+        2.2. Podemos utilizar tu información para mejorar nuestros servicios y realizar análisis estadísticos.\n
+        \n
+        3. Compartir Datos Personales\n
+        \n
+        3.1. Compartiremos tu información con otros usuarios de la Aplicación, como tu nombre y foto de perfil.\n
+        3.2. No venderemos ni compartiremos tu información con terceros sin tu consentimiento, excepto cuando lo exija la ley.\n
+        \n
+        4. Seguridad de Datos\n
+        \n
+        4.1. Tomamos medidas razonables para proteger tus datos personales, pero no podemos garantizar la seguridad absoluta.\n
+        \n
+        5. Cambios en la Política de Privacidad\n
+        \n
+        5.1. Nos reservamos el derecho de modificar nuestra Política de Privacidad en cualquier momento. Te notificaremos de tales cambios.\n
+        \n
+        6. Contacto\n
+        \n
+        6.1. Si tienes alguna pregunta sobre esta Política de Privacidad o nuestros términos, contáctanos en [aplifyservicioalcliente@gmail.com].</string>
 
 
 

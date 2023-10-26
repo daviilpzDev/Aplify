@@ -18,7 +18,7 @@
     <string name="volver">Return to Log in</string>
     <string name="terminos">Privacity Terms and conditions</string>
     <string name="terms_and_conditions">
-        Terms and Conditions Agreement
+        <b><u>Terms and Conditions Agreement</u></b>
 
         This Terms and Conditions Agreement sets forth the terms and conditions under which you may use our mobile application, hereinafter referred to as "Aplify." By accessing and using the Application, you agree to comply with the terms and conditions set forth in this Agreement. If you do not agree with these terms, please do not use the Application.
 
