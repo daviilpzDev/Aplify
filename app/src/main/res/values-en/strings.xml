@@ -10,6 +10,7 @@
     <string name="Continuar">Continue</string>
     <string name="email">Email</string>
     <string name="registro">Sign up</string>
+    <string name="verAcuerdo"><u>See conditions</u></string>
     <string name="yaRegistrado">Are you already registered? Click here</string>
     <string name="porFavor">Please enter the email address of the account you wish to recover.</string>
     <string name="direccionEmail">Aplify account email address</string>
@@ -22,54 +23,54 @@
  \n
         This Terms and Conditions Agreement sets forth the terms and conditions under which you may use our mobile application, hereinafter referred to as "Aplify." By accessing and using the Application, you agree to comply with the terms and conditions set forth in this Agreement. If you do not agree with these terms, please do not use the Application. \n
  \n
-        Use of the Application \n
+        <b>Use of the Application \n</b>
         1.1. You must be at least 18 years old to use the Application. \n
         1.2. You commit to providing accurate and up-to-date information when registering on the Application. \n
         1.3. You must not use the Application for illegal or inappropriate purposes. \n
  \n
-        Privacy and Personal Data \n
+        <b>Privacy and Personal Data \n</b>
         2.1. Our Privacy Policy describes how we collect, use, and protect your personal data. By using the Application, you agree to our privacy terms. \n
  \n
-        User Content \n
+        <b>User Content \n</b>
         3.1. You are solely responsible for the content you share on the Application, including photos and descriptions. You must not share offensive, defamatory, or rights-violating content. \n
  \n
-        Security
+        <b>Security\n</b>
         4.1. You should take measures to keep your login information secure and not share it with third parties. \n
         4.2. You must not attempt to access other users accounts without authorization. \n
  \n
-        Changes to the Agreement \n
+        <b>Changes to the Agreement \n</b>
         5.1. We reserve the right to modify this Agreement at any time. We will notify you of such changes, and you will be able to review the updated version on the Application. \n
  \n
-        Termination \n
+        <b>Termination \n</b>
         6.1. We may terminate your access to the Application in the event of a breach of this Agreement or if we deem your behavior inappropriate. \n
  \n
-        Disclaimer of Liability
+        <b>Disclaimer of Liability\n</b>
         7.1. We are not responsible for the actions of users or the accuracy of the information provided in the Application. \n
  \n
-        Applicable Law \n
+        <b>Applicable Law \n</b>
         8.1. This Agreement is governed by the laws of the State of [Spain], and any disputes will be resolved in the courts of [Seville]. \n
  \n
-        Privacy Policy \n
+        <b>Privacy Policy \n</b>
  \n
-        Collection of Personal Data
+        <b>Collection of Personal Data\n</b>
         1.1. When you register on the Application, we collect personal data such as your name, email address, date of birth, and appointments. \n
         1.2. We may collect additional information, such as profile photos and search preferences. \n
  \n
-        Use of Personal Data \n
+        <b>Use of Personal Data \n</b>
         2.1. We use your personal data to provide the services of the Application, such as displaying profiles of other users and facilitating communication. \n
         2.2. We may use your information to improve our services and conduct statistical analysis. \n
  \n
-        Sharing Personal Data \n
+        <b>Sharing Personal Data \n</b>
         3.1. We will share your information with other users of the Application, such as your name and profile photo. \n
         3.2. We will not sell or share your information with third parties without your consent, except as required by law. \n
  \n
-        Data Security \n
+        <b>Data Security \n</b>
         4.1. We take reasonable measures to protect your personal data, but we cannot guarantee absolute security. \n
  \n
-        Changes to the Privacy Policy \n
+        <b>Changes to the Privacy Policy \n</b>
         5.1. We reserve the right to modify our Privacy Policy at any time. We will notify you of such changes. \n
  \n
-        Contact \n
+        <b>Contact \n</b>
         6.1. If you have any questions about this Privacy Policy or our terms, please contact us at [aplifyservicioalcliente@gmail.com]. \n
     </string>
 

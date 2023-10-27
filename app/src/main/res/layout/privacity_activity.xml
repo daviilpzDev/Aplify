@@ -59,7 +59,7 @@
             android:layout_gravity="center"
             android:layout_margin="50dp"
             android:background="@drawable/rounded_button2"
-            android:onClick="initSecAct"
+            android:onClick="initRegister"
             android:text="@string/Continuar"
             tools:ignore="TouchTargetSizeCheck" />
 

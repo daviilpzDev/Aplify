@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4"
-        tools:ignore="Autofill,LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="Autofill,LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -50,9 +50,9 @@
         android:layout_height="28dp"
         android:background="@color/transparency"
         android:ems="10"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:textColor="@color/black"
-        android:hint="@string/password"
         android:textColorHint="@color/grey_transparent"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,7 +60,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView2"

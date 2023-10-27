@@ -29,4 +29,12 @@ public class register_activity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    // Ver condiciones y terminos
+    public void initConditions(View view) {
+        Intent intent = new Intent(this, privacity.class);
+        startActivity(intent);
+    }
+
+
 }
