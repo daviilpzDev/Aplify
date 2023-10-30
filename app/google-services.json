@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "301012254656",
+    "project_id": "aplify-59b8a",
+    "storage_bucket": "aplify-59b8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301012254656:android:fce993b64f8f820a251225",
+        "android_client_info": {
+          "package_name": "com.medac.aplify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301012254656-ol0d69rr7k80mcmgrka5k9boq1s58j6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAU84VpnpTTkc_rl9z_x86C2xLmNfPdMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301012254656-ol0d69rr7k80mcmgrka5k9boq1s58j6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

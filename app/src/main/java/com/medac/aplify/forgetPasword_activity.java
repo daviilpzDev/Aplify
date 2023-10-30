@@ -19,7 +19,7 @@ public class forgetPasword_activity extends AppCompatActivity {
     
     // Llamada de vuelta al main
     public void goToMainActivity(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 }

@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="1.0" >
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/buttonRegister"
             android:layout_width="237dp"
             android:layout_height="67dp"
             android:layout_gravity="center"
@@ -82,7 +82,7 @@
         tools:ignore="MissingConstraints,TextContrastCheck" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/editTextName"
         android:layout_width="89dp"
         android:layout_height="27dp"
         android:layout_marginTop="5dp"
@@ -105,7 +105,7 @@
         tools:ignore="Autofill,LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress4"
+        android:id="@+id/editTextApellido"
         android:layout_width="89dp"
         android:layout_height="27dp"
         android:layout_marginTop="5dp"
@@ -201,6 +201,7 @@
         app:layout_constraintVertical_bias="0.002"
         tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -211,13 +212,12 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.383"
+        app:layout_constraintVertical_bias="0.381"
         tools:ignore="MissingConstraints,TextContrastCheck" />
-
 
     <CheckBox
         android:id="@+id/checkBox2"

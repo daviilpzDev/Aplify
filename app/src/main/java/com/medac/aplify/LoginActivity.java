@@ -7,16 +7,25 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
 
+
+public class LoginActivity extends AppCompatActivity {
+
+    private FirebaseAuth mAuth;
     @Override
     // Inicio de app metodo onCreate
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Metodo para bloquear pantalla en vertical
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
+
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
 
     }
+
+
 
     // Llamada a activity registro
     public void initSecAct(View view){
