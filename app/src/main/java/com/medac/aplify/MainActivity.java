@@ -20,34 +20,37 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    FirebaseFirestore firestore;
-
     @Override
-    // Inicio de app metodo onCreate
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Metodo para bloquear pantalla en vertical
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
 
+        // Initialize Firestore
+        FirebaseFirestore firestore = FirebaseFirestore.getInstance();
 
-        FirebaseFirestore Firestore = FirebaseFirestore.getInstance();
-         Map<String,Object> user = new HashMap<>();
-         user.put("Firstname", "Easy");
-         user.put("Lastname", "Tuto");
-         user.put("description", "Subscribe");
+        // Create a user document
+        Map<String, Object> user = new HashMap<>();
+        user.put("Firstname", "Easy");
+        user.put("Lastname", "Tuto");
+        user.put("description", "Subscribe");
 
-         firestore.collection("users").add(user).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-             @Override
-             public void onSuccess(DocumentReference documentReference) {
-                 Toast.makeText(getApplicationContext(),"Succes",Toast.LENGTH_LONG).show();
-             }
-         }).addOnFailureListener(new OnFailureListener() {
-             @Override
-             public void onFailure(@NonNull Exception e) {
-                 Toast.makeText(getApplicationContext(),"Failure",Toast.LENGTH_LONG).show();
-             }
-         });
+        // Add the user document to the "users" collection
+        firestore.collection("users").add(user)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_LONG).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(getApplicationContext(), "Failure", Toast.LENGTH_LONG).show();
+                    }
+                });
     }
+
 
 
 
