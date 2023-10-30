@@ -13,20 +13,20 @@
         android:theme="@style/Theme.Aplify"
         tools:targetApi="31">
         <activity
-            android:name=".privacity"
+            android:name=".privacityActivity"
             android:exported="false"
             android:theme="@style/AppTheme" />
 
         <activity
-            android:name=".forgetPasword_activity"
+            android:name=".forgetPassActivity"
             android:exported="false"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".register_activity"
+            android:name=".registerActivity"
             android:exported="false"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".loginActivity"
             android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>

@@ -10,7 +10,7 @@ import android.view.View;
 import com.google.firebase.auth.FirebaseAuth;
 
 
-public class LoginActivity extends AppCompatActivity {
+public class loginActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     @Override
@@ -30,14 +30,14 @@ public class LoginActivity extends AppCompatActivity {
     // Llamada a activity registro
     public void initSecAct(View view){
 
-        Intent intentSecondary = new Intent(this, register_activity.class);
+        Intent intentSecondary = new Intent(this, registerActivity.class);
         startActivity( intentSecondary);
     }
 
     // Llamada a activity forgetPassword
     public void initOlvido(View view){
 
-        Intent intentSecondary = new Intent(this, forgetPasword_activity.class);
+        Intent intentSecondary = new Intent(this, forgetPassActivity.class);
         startActivity( intentSecondary);
     }
 

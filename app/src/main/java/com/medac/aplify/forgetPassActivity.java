@@ -7,7 +7,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 
-public class forgetPasword_activity extends AppCompatActivity {
+public class forgetPassActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class forgetPasword_activity extends AppCompatActivity {
     
     // Llamada de vuelta al main
     public void goToMainActivity(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, loginActivity.class);
         startActivity(intent);
     }
 }
