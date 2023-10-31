@@ -81,13 +81,21 @@ public class registerActivity extends AppCompatActivity {
 
     private void registerUser() {
 
+        // Variables de conversion de editText a string
         final String nameUser = editTextName.getText().toString().trim();
         final String surNameUser = editTextApellido.getText().toString().trim();
         String emailUser = editTextTextEmailAddress.getText().toString().trim();
         String passwordUser = editTextTextPassword.getText().toString().trim();
 
-        if (nameUser.isEmpty() && surNameUser.isEmpty() && emailUser.isEmpty() && passwordUser.isEmpty()) {
-            Toast.makeText(registerActivity.this, "Completa los campos", Toast.LENGTH_SHORT).show();
+        // Condiciones para poder registrarse
+        if (nameUser.isEmpty() || nameUser.length() < 3)    {
+            Toast.makeText(registerActivity.this, "Añade un nombre con más de 2 carácteres", Toast.LENGTH_SHORT).show();
+        } else if (surNameUser.isEmpty() || surNameUser.length() < 3) {
+            Toast.makeText(registerActivity.this, "Añade un apellido con más de 2 carácteres", Toast.LENGTH_SHORT).show();
+        } else if (emailUser.isEmpty()) {
+            Toast.makeText(registerActivity.this, "Añade un correo electronico correctamente", Toast.LENGTH_SHORT).show();
+        } else if (passwordUser.isEmpty() || passwordUser.length() < 6  ) {
+            Toast.makeText(registerActivity.this, "Añade una contraseña con al menos 6 carácteres", Toast.LENGTH_SHORT).show();
         } else {
             // mostrar progress dialog
             mProgressDialog.setTitle("Proceso de registro");
@@ -101,8 +109,10 @@ public class registerActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
+                            // Variable de llamada de id
                             String id = mAuth.getCurrentUser().getUid();
 
+                            // Creacion de map en firestore
                             Map<String, Object> map = new HashMap<>();
                             map.put("id", id);
                             map.put("name", nameUser);
@@ -110,30 +120,24 @@ public class registerActivity extends AppCompatActivity {
                             map.put("email", emailUser);
                             map.put("password", passwordUser);
 
+                            // Registro en firestore
                             mFirestore.collection("user").document(id).set(map).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
-                                public void onSuccess(Void unused) {
+                                public void onSuccess(Void unused) { // en caso de que este correcto
                                     finish();
                                     Toast.makeText(registerActivity.this, "Usuario registrado correctamente ", Toast.LENGTH_SHORT).show();
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     updateUI(user);
                                     mProgressDialog.dismiss();
                                 }
-                            }).addOnFailureListener(new OnFailureListener() {
+                            }).addOnFailureListener(new OnFailureListener() { // en caso de fallo al registrar
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
                                     Toast.makeText(registerActivity.this, "Error al guardar", Toast.LENGTH_SHORT).show();
                                 }
                             });
-
-
-
-
-
-
-
                         }
-        }).addOnFailureListener(new OnFailureListener() {
+        }).addOnFailureListener(new OnFailureListener() { // En caso de fallo
                         @Override
                         public void onFailure(@NonNull Exception e) {
                             Toast.makeText(registerActivity.this, "Error al registrar el usuario", Toast.LENGTH_SHORT).show();

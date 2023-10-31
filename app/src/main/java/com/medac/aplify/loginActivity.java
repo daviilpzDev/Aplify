@@ -7,7 +7,10 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -15,6 +18,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
@@ -24,10 +29,14 @@ import com.google.firebase.auth.GoogleAuthProvider;
 
 public class loginActivity extends AppCompatActivity {
 
+    // Variables
     private FirebaseAuth mAuth;
     private GoogleSignInClient googleSignInClient;
     private FirebaseAuth firebaseAuth;
     private static final int RC_SIGN_IN = 123; // Código de solicitud para iniciar sesión con Google
+
+    EditText email, password;
+    Button buttonLogin;
     @Override
     // Inicio de app metodo onCreate
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +44,27 @@ public class loginActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Metodo para bloquear pantalla en vertical
         setContentView(R.layout.activity_login);
 
-        // Initialize Firebase Auth
+        // Inicializa varibles
         mAuth = FirebaseAuth.getInstance();
+        email = findViewById(R.id.editTextTextEmailAddress);
+        password = findViewById(R.id.editTextTextPassword);
+        buttonLogin = findViewById(R.id.buttonLogin);
+
+
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String emailUser = email.getText().toString().trim();
+                String passUser = password.getText().toString().trim();
+
+                if(emailUser.isEmpty() || passUser.isEmpty()){
+                    Toast.makeText(loginActivity.this, "Añade los datos correctamente", Toast.LENGTH_SHORT).show();
+                }else {
+                    loginUser(emailUser, passUser);
+                }
+            }
+        });
+
 
         // Inicializa FirebaseAuth y GoogleSignInOptions
         firebaseAuth = FirebaseAuth.getInstance();
@@ -54,6 +82,26 @@ public class loginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 signInWithGoogle();
+            }
+        });
+    }
+
+    private void loginUser(String emailUser, String passUser) {
+        mAuth.signInWithEmailAndPassword(emailUser, passUser).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
+                    finish();
+                    startActivity(new Intent(loginActivity.this, privacityActivity.class));
+                    Toast.makeText(loginActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(loginActivity.this, "Error al iniciar sesión", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(loginActivity.this, "Añade los datos correctamente", Toast.LENGTH_SHORT).show();
             }
         });
     }
