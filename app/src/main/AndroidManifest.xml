@@ -13,10 +13,12 @@
         android:theme="@style/Theme.Aplify"
         tools:targetApi="31">
         <activity
+            android:name=".completePerfilActivity"
+            android:exported="false" />
+        <activity
             android:name=".privacityActivity"
             android:exported="false"
             android:theme="@style/AppTheme" />
-
         <activity
             android:name=".forgetPassActivity"
             android:exported="false"

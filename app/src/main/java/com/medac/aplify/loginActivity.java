@@ -100,6 +100,8 @@ public class loginActivity extends AppCompatActivity {
 
 
 
+
+
     // Llamada a activity registro
     public void initSecAct(View view){
 
