@@ -7,7 +7,7 @@
     <string name="registrarse">Registrarse</string>
     <string name="password">Contraseña</string>
     <string name="agree_text">Estoy de acuerdo con el acuerdo de términos y servicios y la política de privacidad</string>
-    <string name="Continuar">Continuar</string>
+    <string name="Continuar">Registrarse</string>
     <string name="email">Correo electrónico</string>
     <string name="registro">Registro</string>
     <string name="verAcuerdo"><u>Ver acuerdo</u></string>
@@ -85,7 +85,7 @@
         \n
         <b>6. Contacto\n</b>
         \n
-        6.1. Si tienes alguna pregunta sobre esta Política de Privacidad o nuestros términos, contáctanos en [aplifyservicioalcliente@gmail.com].</string>
+        6.1. Si tienes alguna pregunta sobre esta Política de Privacidad o nuestros términos, contáctanos en [aplifyservice@gmail.com].</string>
     <string name="default_web_client_id">. </string>
 
 

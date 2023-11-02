@@ -25,6 +25,7 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.firestore.auth.User;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -46,6 +47,7 @@ public class loginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Metodo para bloquear pantalla en vertical
         setContentView(R.layout.activity_login);
+
 
         // Inicializa varibles
         mAuth = FirebaseAuth.getInstance();
@@ -93,6 +95,7 @@ public class loginActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(emailUser, passUser).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+
                 if (task.isSuccessful()){
                     finish();
                     startActivity(new Intent(loginActivity.this, privacityActivity.class));
@@ -100,6 +103,7 @@ public class loginActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(loginActivity.this, "Error al iniciar sesión", Toast.LENGTH_SHORT).show();
                 }
+
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

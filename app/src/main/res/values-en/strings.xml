@@ -7,7 +7,7 @@
     <string name="registrarse">Register</string>
     <string name="password">Password</string>
     <string name="agree_text">I agree to the Terms of Services and Privacy Policy</string>
-    <string name="Continuar">Continue</string>
+    <string name="Continuar">Register</string>
     <string name="email">Email</string>
     <string name="registro">Sign up</string>
     <string name="verAcuerdo"><u>See conditions</u></string>
@@ -71,7 +71,7 @@
         5.1. We reserve the right to modify our Privacy Policy at any time. We will notify you of such changes. \n
  \n
         <b>Contact \n</b>
-        6.1. If you have any questions about this Privacy Policy or our terms, please contact us at [aplifyservicioalcliente@gmail.com]. \n
+        6.1. If you have any questions about this Privacy Policy or our terms, please contact us at [aplifyservice@gmail.com]. \n
     </string>
 
 

@@ -129,6 +129,9 @@ public class registerActivity extends AppCompatActivity {
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     updateUI(user);
                                     mProgressDialog.dismiss();
+
+
+
                                 }
                             }).addOnFailureListener(new OnFailureListener() { // en caso de fallo al registrar
                                 @Override
