@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservOptionsFragment">
+
+    <!-- Contenedor layout 1 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        tools:ignore="ScrollViewSize">
+
+
+        <ImageView
+            android:id="@+id/basketIcon"
+            android:layout_width="63dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toStartOf="@+id/futbolIcon"
+            app:layout_constraintHorizontal_bias="0.981"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/basket"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/futbolIcon"
+            android:layout_width="70dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/futbol"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/tenisIcon"
+            android:layout_width="63dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/futbolIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tenis"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/peluqueriaIcon"
+            android:layout_width="63dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.163"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/basketIcon"
+            app:layout_constraintVertical_bias="0.126"
+            app:srcCompat="@drawable/peluqueria"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/restauranteIcon"
+            android:layout_width="63dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tenisIcon"
+            app:layout_constraintVertical_bias="0.109"
+            app:srcCompat="@drawable/restaurantes"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/parkIcon"
+            android:layout_width="82dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.729"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restauranteIcon"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/park"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/dentistaIcon"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/parkIcon"
+            app:layout_constraintHorizontal_bias="0.703"
+            app:layout_constraintStart_toEndOf="@+id/saludIcon"
+            app:layout_constraintTop_toBottomOf="@+id/futbolIcon"
+            app:layout_constraintVertical_bias="0.962"
+            app:srcCompat="@drawable/dentista"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/saludIcon"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.294"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/peluqueriaIcon"
+            app:srcCompat="@drawable/salud"
+            tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+

@@ -87,6 +87,8 @@
         \n
         6.1. Si tienes alguna pregunta sobre esta Política de Privacidad o nuestros términos, contáctanos en [aplifyservice@gmail.com].</string>
     <string name="default_web_client_id">. </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

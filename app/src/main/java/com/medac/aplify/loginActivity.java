@@ -55,16 +55,18 @@ public class loginActivity extends AppCompatActivity {
         password = findViewById(R.id.editTextTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
 
-
+        // registro de accion de boton de login
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // pasa a toString editText
                 String emailUser = email.getText().toString().trim();
                 String passUser = password.getText().toString().trim();
 
                 if(emailUser.isEmpty() || passUser.isEmpty()){
                     Toast.makeText(loginActivity.this, "Añade los datos correctamente", Toast.LENGTH_SHORT).show();
                 }else {
+                    // si es correcto hace llamada a metodo loginUser
                     loginUser(emailUser, passUser);
                 }
             }
@@ -91,6 +93,7 @@ public class loginActivity extends AppCompatActivity {
         });
     }
 
+    // Metodo de inicio de sesion
     private void loginUser(String emailUser, String passUser) {
         mAuth.signInWithEmailAndPassword(emailUser, passUser).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -98,7 +101,7 @@ public class loginActivity extends AppCompatActivity {
 
                 if (task.isSuccessful()){
                     finish();
-                    startActivity(new Intent(loginActivity.this, privacityActivity.class));
+                    startActivity(new Intent(loginActivity.this, MainActivity.class));
                     Toast.makeText(loginActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(loginActivity.this, "Error al iniciar sesión", Toast.LENGTH_SHORT).show();
@@ -113,6 +116,7 @@ public class loginActivity extends AppCompatActivity {
         });
     }
 
+    // Metodos inicio de sesion con google
     private void signInWithGoogle() {
         Intent signInIntent = googleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
@@ -141,10 +145,13 @@ public class loginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // El inicio de sesión con Google fue exitoso, aquí puedes realizar acciones adicionales.
-                            // Por ejemplo, puedes redirigir al usuario a la actividad principal de la aplicación.
+                            // El inicio de sesión con Google fue exitoso, redirige a privacity activity.
+                            startActivity(new Intent(loginActivity.this, MainActivity.class));
+
                         } else {
                             // El inicio de sesión con Google falló
+                            Toast.makeText(loginActivity.this, "Error al iniciar sesión con Google", Toast.LENGTH_SHORT).show();
+
                         }
                     }
                 });
