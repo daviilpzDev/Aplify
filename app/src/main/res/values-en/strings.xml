@@ -78,8 +78,9 @@
     <string name="Pregunta2">Cancel appointments</string>
     <string name="Pregunta3">Others</string>
 
-    <string name="texto1">text1</string>
-    <string name="textito1">textito1</string>
+
+    <string name="help">How can we help you?</string>
+    <string name="helloChat">Hello! I am your Aplify assistant. What do you need?</string>
 
 
 

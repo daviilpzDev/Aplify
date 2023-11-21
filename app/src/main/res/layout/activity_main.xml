@@ -11,14 +11,13 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="372dp"
-        android:layout_height="584dp"
+        android:layout_width="373dp"
+        android:layout_height="535dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar"
-        app:layout_constraintVertical_bias="0.198"
+        app:layout_constraintVertical_bias="0.084"
         tools:ignore="SpeakableTextPresentCheck">
 
 
@@ -68,9 +67,9 @@
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
+            android:onClick="initChat"
             app:srcCompat="@drawable/chat1"
-            tools:ignore="ContentDescription"
-            android:onClick="initChat"/>
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
     </LinearLayout>

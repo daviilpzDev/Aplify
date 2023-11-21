@@ -1,5 +1,6 @@
 package com.medac.aplify;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -66,7 +67,7 @@ public class botchat extends AppCompatActivity {
             public void run() {
                 // Simular una demora en la respuesta (puedes eliminar esto en un caso real)
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(200);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -84,5 +85,10 @@ public class botchat extends AppCompatActivity {
 
     private void mostrarRespuesta(String respuesta) {
         Respuesta.setText(respuesta);
+    }
+
+    public void goToMainActivity(View view) {
+        Intent intentSecondary = new Intent(this, MainActivity.class);
+        startActivity( intentSecondary);
     }
 }
