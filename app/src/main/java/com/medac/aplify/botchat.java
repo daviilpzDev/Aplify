@@ -15,9 +15,7 @@ public class botchat extends AppCompatActivity {
     private Button Pregunta1;
     private Button Pregunta2;
     private Button Pregunta3;
-    private Button Pregunta4;
-    private Button Pregunta5;
-    private Button Pregunta6;
+
 
     private Handler handler;
 
@@ -32,9 +30,7 @@ public class botchat extends AppCompatActivity {
         Pregunta1 = findViewById(R.id.Pregunta1);
         Pregunta2 = findViewById(R.id.Pregunta2);
         Pregunta3 = findViewById(R.id.Pregunta3);
-        Pregunta4 = findViewById(R.id.Pregunta4);
-        Pregunta5 = findViewById(R.id.Pregunta5);
-        Pregunta6 = findViewById(R.id.Pregunta6);
+
         // Otros botones
 
         Respuesta = findViewById(R.id.Respuesta);
@@ -43,42 +39,24 @@ public class botchat extends AppCompatActivity {
         Pregunta1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iniciarConversacion("Respuesta a Pregunta 1");
+                iniciarConversacion("Para coger citas, debera dirigirse desde la aplicacion al icono del sitio donde quiere coger la citas, al pulsar, le dirigira hacia las citas disponibles en ese establecimiento junto con las horas disponibles");
             }
         });
 
         Pregunta2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iniciarConversacion("Respuesta a Pregunta 2");
+                iniciarConversacion("Para cancelar una cita, debera dirigirse al apartado de mis citas, en ese apartado estaran todas las citas que tienes pendientes, pulsara sobre la x en la cita que quiera cancelar");
             }
         });
 
         Pregunta3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iniciarConversacion("Respuesta a Pregunta 3");
+                iniciarConversacion("¿En que mas puedo ayudarte?");
             }
         });
-        Pregunta4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iniciarConversacion("Respuesta a Pregunta 4");
-            }
-        });
-        Pregunta5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iniciarConversacion("Respuesta a Pregunta 5");
-            }
-        });
-        Pregunta6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iniciarConversacion("Respuesta a Pregunta 6");
-            }
-        });
-        // Configurar otros listeners para los demás botones
+
     }
 
     private void iniciarConversacion(final String respuesta) {

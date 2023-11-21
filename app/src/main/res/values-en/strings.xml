@@ -74,6 +74,19 @@
         6.1. If you have any questions about this Privacy Policy or our terms, please contact us at [aplifyservice@gmail.com]. \n
     </string>
     <string name="Registrarse">Register</string>
+    <string name="Pregunta1"> Take appointments </string>
+    <string name="Pregunta2">Cancel appointments</string>
+    <string name="Pregunta3">Others</string>
+
+    <string name="texto1">text1</string>
+    <string name="textito1">textito1</string>
+
+
+
+
+
+
+
 
 
 </resources>

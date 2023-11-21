@@ -50,7 +50,8 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             app:srcCompat="@drawable/search"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription"
+            />
 
         <ImageView
             android:id="@+id/homeIcon"
@@ -68,7 +69,8 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             app:srcCompat="@drawable/chat1"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription"
+            android:onClick="initChat"/>
 
 
     </LinearLayout>
