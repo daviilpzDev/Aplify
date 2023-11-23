@@ -7,73 +7,6 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <!-- Contenedor de scroll principal-->
-
-    <ScrollView
-        android:id="@+id/scrollView3"
-        android:layout_width="373dp"
-        android:layout_height="535dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topBar"
-        app:layout_constraintVertical_bias="0.084"
-        tools:ignore="SpeakableTextPresentCheck">
-
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentReservOptions"
-            android:name="com.medac.aplify.ReservOptionsFragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            tools:layout="@layout/fragment_reserv_options" />
-    </ScrollView>
-
-    <LinearLayout
-        android:id="@+id/menuBar"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
-        android:orientation="horizontal"
-        android:background="@drawable/home_bar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        app:layout_constraintVertical_bias="1.0">
-
-        <ImageView
-            android:id="@+id/searchIcon"
-            android:layout_width="17dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/search"
-            tools:ignore="ContentDescription"
-            />
-
-        <ImageView
-            android:id="@+id/homeIcon"
-            android:layout_width="17dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/home"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/chatIcon"
-            android:layout_width="12dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:onClick="initChat"
-            app:srcCompat="@drawable/chat1"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-
-    </LinearLayout>
-
     <LinearLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
@@ -111,4 +44,93 @@
 
 
     </LinearLayout>
+    <!-- Contenedor de scroll principal-->
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="350dp"
+        android:layout_height="535dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.084"
+        tools:ignore="SpeakableTextPresentCheck">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRoundedSections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/seccionRedonda"
+                />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentReservOptions"
+                android:name="com.medac.aplify.ReservOptionsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+
+                tools:layout="@layout/fragment_reserv_options" />
+
+
+            <TextView
+                android:id="@+id/textViewSportsSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/seccionDeportes"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentSportsSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:name="com.medac.aplify.SportsFragment"
+                tools:layout="@layout/fragment_sports"
+                android:layout_marginBottom="50dp"/>
+            <TextView
+                android:id="@+id/textViewMedicalSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/seccionMedica"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentSportsSection2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:name="com.medac.aplify.SportsFragment"
+                tools:layout="@layout/fragment_sports" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentHomeBar"
+        android:name="com.medac.aplify.HomeBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout="@layout/fragment_home_bar" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

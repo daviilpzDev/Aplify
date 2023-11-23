@@ -95,14 +95,9 @@
 
     <string name="help">¿En qué puedo ayudarte?</string>
     <string name="helloChat">¡Hola! Soy tu asistente de Aplify ¿Que necesitas?</string>
-
-
-
-
-
-
-
-
+    <string name="seccionDeportes"><b>Sección de Deportes</b></string>
+    <string name="seccionMedica"><b>Sección de Salud</b></string>
+    <string name="seccionRedonda"><b>Secciones en Aplify</b></string>
 
 
 </resources>
