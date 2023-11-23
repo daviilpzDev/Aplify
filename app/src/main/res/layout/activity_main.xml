@@ -40,7 +40,8 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             app:srcCompat="@drawable/user"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription"
+            android:onClick="initCompletePerfil"/>
 
 
     </LinearLayout>
@@ -65,10 +66,10 @@
                 android:id="@+id/textViewRoundedSections"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
                 android:gravity="center"
                 android:text="@string/seccionRedonda"
-                />
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentReservOptions"
@@ -84,10 +85,11 @@
                 android:id="@+id/textViewSportsSection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
                 android:text="@string/seccionDeportes"
                 android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="20sp" />
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentSportsSection"
@@ -97,14 +99,16 @@
                 android:name="com.medac.aplify.SportsFragment"
                 tools:layout="@layout/fragment_sports"
                 android:layout_marginBottom="50dp"/>
+
             <TextView
                 android:id="@+id/textViewMedicalSection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
                 android:text="@string/seccionMedica"
                 android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="20sp" />
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentSportsSection2"

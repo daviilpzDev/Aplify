@@ -87,8 +87,12 @@ public class botchat extends AppCompatActivity {
         Respuesta.setText(respuesta);
     }
 
-    public void goToMainActivity(View view) {
-        Intent intentSecondary = new Intent(this, MainActivity.class);
+    public void initCompletePerfil(View view) {
+        Intent intentSecondary = new Intent(this, completePerfilActivity.class);
         startActivity( intentSecondary);
     }
+
+
+
+
 }

@@ -19,4 +19,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intentSecondary = new Intent(this, botchat.class);
         startActivity( intentSecondary);
     }
+
+    public void initCompletePerfil(View view) {
+        Intent intentSecondary = new Intent(this, completePerfilActivity.class);
+        startActivity( intentSecondary);
+    }
+
+    public void initHome(View view) {
+        Intent intentSecondary = new Intent(this, MainActivity.class);
+        startActivity( intentSecondary);
+    }
 }

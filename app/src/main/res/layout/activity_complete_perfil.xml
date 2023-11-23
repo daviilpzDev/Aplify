@@ -4,24 +4,239 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".completePerfilActivity"
     >
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/topBar"
         android:layout_width="match_parent"
-        android:layout_height="70sp"
-        android:background="@drawable/home_bar"
-        android:orientation="vertical"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0" >
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022">
+
+        <ImageView
+            android:id="@+id/aplifyIcon"
+            android:layout_width="43dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/aplify"
+            tools:ignore="ContentDescription,RtlHardcoded,VisualLintBounds" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="80dp" />
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/user"
+            tools:ignore="ContentDescription" />
 
 
     </LinearLayout>
 
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentHomeBar"
+        android:name="com.medac.aplify.HomeBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout="@layout/fragment_home_bar" />
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="511dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentHomeBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar">
+
+        <TextView
+            android:id="@+id/textViewUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@color/transparency"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/user"
+            android:inputType="text"
+            android:textAlignment="viewStart"
+            android:textColorHint="@color/grey_transparent"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            tools:ignore="Autofill,LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/textViewTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/editTextTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@color/transparency"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/telefono"
+            android:inputType="phone"
+            android:textAlignment="viewStart"
+            android:textColorHint="@color/grey_transparent"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            tools:ignore="Autofill,LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/textViewSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sexo"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioButtonHombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/secundary"
+                android:clickable="true"
+                android:checked="false"
+                android:text="@string/hombre"
+                android:textColor="@color/black"
+                android:textColorHint="#FF5722" />
+            <RadioButton
+                android:id="@+id/radioButtonMujer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/secundary"
+                android:clickable="true"
+                android:checked="false"
+                android:text="@string/mujer"
+                android:textColor="@color/black"
+                android:textColorHint="#FF5722" />
+            <RadioButton
+                android:id="@+id/radioButtonNada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/secundary"
+                android:clickable="true"
+                android:checked="false"
+                android:text="@string/noDecir"
+                android:textColor="@color/black"
+                android:textColorHint="#FF5722" />
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/textViewFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/FechaNacimiento"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/editTextFecha"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@color/transparency"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/FechaNacimiento"
+            android:inputType="date"
+            android:textAlignment="viewStart"
+            android:textColorHint="@color/grey_transparent"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            tools:ignore="Autofill,LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:background="@drawable/rounded_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar" />
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -98,6 +98,13 @@
     <string name="seccionDeportes"><b>Sección de Deportes</b></string>
     <string name="seccionMedica"><b>Sección de Salud</b></string>
     <string name="seccionRedonda"><b>Secciones en Aplify</b></string>
+    <string name="user">Nombre usuario</string>
+    <string name="telefono">Teléfono</string>
+    <string name="sexo">Sexo</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="noDecir">Prefiero no decirlo</string>
+    <string name="FechaNacimiento">Fecha de Nacimiento</string>
 
 
 </resources>

@@ -29,6 +29,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
+            android:onClick="initHome"
             tools:ignore="ContentDescription" />
 
         <ImageView
