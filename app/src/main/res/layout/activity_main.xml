@@ -39,9 +39,9 @@
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:onClick="initCompletePerfil"
             app:srcCompat="@drawable/user"
-            tools:ignore="ContentDescription"
-            android:onClick="initCompletePerfil"/>
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
     </LinearLayout>
@@ -77,7 +77,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="50dp"
-
                 tools:layout="@layout/fragment_reserv_options" />
 
 
@@ -111,17 +110,33 @@
                 android:textSize="20sp" />
 
             <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentSportsSection2"
+                android:id="@+id/fragmentSaludSection"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:name="com.medac.aplify.SportsFragment"
-                tools:layout="@layout/fragment_sports" />
+                android:layout_marginBottom="50dp"
+                android:name="com.medac.aplify.salud"
+                tools:layout="@layout/fragment_salud" />
+
+
+
+
+            <TextView
+                android:id="@+id/tvAcercade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acerca de"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                android:onClick="initAcercaDe"
+                app:layout_constraintBottom_toTopOf="@+id/fragmentHomeBar" />
 
         </LinearLayout>
 
 
+
     </ScrollView>
+
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentHomeBar"

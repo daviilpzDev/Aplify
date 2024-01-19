@@ -105,6 +105,8 @@
     <string name="mujer">Mujer</string>
     <string name="noDecir">Prefiero no decirlo</string>
     <string name="FechaNacimiento">Fecha de Nacimiento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

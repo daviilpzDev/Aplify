@@ -29,4 +29,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intentSecondary = new Intent(this, MainActivity.class);
         startActivity( intentSecondary);
     }
+
+    public void initAcercaDe(View view) {
+        Intent intentSecondary = new Intent(this, AcercaDeActivity.class);
+        startActivity( intentSecondary);
+    }
+
+
 }
