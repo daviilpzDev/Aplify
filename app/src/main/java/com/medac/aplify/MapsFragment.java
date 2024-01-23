@@ -24,7 +24,14 @@ public class MapsFragment extends Fragment {
 
             LatLng medac = new LatLng(37.40652098410911, -5.933073360805121);
             googleMap.addMarker(new MarkerOptions().position(medac).title("Medac Sevilla"));
-            googleMap.moveCamera(CameraUpdateFactory.newLatLng(medac));
+
+            LatLng micasa = new LatLng(37.40154165137732, -5.920958435660851);
+            googleMap.addMarker(new MarkerOptions().position(micasa).title("Mi casa"));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(micasa));
+
+            LatLng miotracasa = new LatLng(37.22068932013324, -5.807636074306178);
+            googleMap.addMarker(new MarkerOptions().position(miotracasa).title("Mi segunda casa"));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(miotracasa));
         }
     };
 

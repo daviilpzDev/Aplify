@@ -8,54 +8,42 @@
     tools:context=".AcercaDeActivity">
 
 
-    <TextView
-        android:id="@+id/tvAcercade"
-        android:layout_width="match_parent"
-        android:layout_height="26dp"
-        android:ems="10"
-        android:text="Acerca de "
-        android:textAlignment="center"
-        android:textColor="@color/lowColorText"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255"
-        tools:ignore="Autofill,LabelFor,TextSizeCheck,TouchTargetSizeCheck" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="142dp"
-        android:layout_height="131dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/aplify"
-        tools:ignore="ContentDescription" />
-
-
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="304dp"
-        android:layout_height="347dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/tvAcercade"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:ems="10"
+                android:text="Acerca de "
+                android:textAlignment="center"
+                android:textColor="@color/lowColorText"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.255"
+                tools:ignore="Autofill,LabelFor,TextSizeCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/aplify"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/tvLocalizaion"
@@ -80,13 +68,12 @@
                 android:id="@+id/map"
                 android:name="com.medac.aplify.MapsFragment"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="278dp"
                 android:layout_marginBottom="50dp"
                 tools:layout="@layout/fragment_maps" />
 
         </LinearLayout>
 
-    </ScrollView>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -98,7 +85,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
         app:layout_constraintVertical_bias="1.0">
 
         <Button
